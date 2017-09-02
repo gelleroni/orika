@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+
+<classMapping classA="orikatest.beans.BasicPerson" classB="orikatest.beans.BasicPersonDto"> 
+	
+		<fieldMapping fieldA="name" fieldB="fullName"/>
+		<fieldMapping fieldA="age" fieldB="currentAge"/>
+	
+</classMapping>	
+
+</mappings>
