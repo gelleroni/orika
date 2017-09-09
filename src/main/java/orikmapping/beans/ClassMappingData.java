@@ -21,6 +21,9 @@ public class ClassMappingData {
 	@XmlAttribute(name="classB")
 	private String typeBclassName;
 	
+	@XmlAttribute(name="byDefault")
+	private boolean byDefault;
+	
 	@XmlElement(name="fieldMapping")
 	private List<FieldMappingData> fieldMappingDataList ;
 	
@@ -33,14 +36,14 @@ public class ClassMappingData {
 	}
 	
 	
-	//@XmlAttribute(name="classA")
+	
 	public void setTypeAclassName(String typeAclassName) {
 		this.typeAclassName = typeAclassName;
 	}
 	public String getTypeBclassName() {
 		return typeBclassName;
 	}
-	//@XmlAttribute(name="classB")
+	
 	public void setTypeBclassName(String typeBclassName) {
 		this.typeBclassName = typeBclassName;
 	}
@@ -55,13 +58,23 @@ public class ClassMappingData {
 	public void setFieldMappingDataList(List<FieldMappingData> fieldMappingDataList) {
 		this.fieldMappingDataList = fieldMappingDataList;
 	}
+	
+	
+
+	public boolean isByDefault() {
+		return byDefault;
+	}
+
+	public void setByDefault(boolean byDefault) {
+		this.byDefault = byDefault;
+	}
 
 	@Override
 	public String toString() {
 		
 		StringBuilder builder = new StringBuilder();
 		builder.append("ClassMappingData [typeAclassName=" + typeAclassName + ", typeBclassName=" + typeBclassName
-				+ ", fieldMappingDataList=");
+				+ ", byDefault=" + byDefault +", fieldMappingDataList=");
 		for(FieldMappingData data : this.fieldMappingDataList) {
 			builder.append(data).append("\n");
 		}

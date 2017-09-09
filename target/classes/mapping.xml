@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mappings>
 
-<classMapping classA="orikatest.beans.BasicPerson" classB="orikatest.beans.BasicPersonDto"> 
+<classMapping classA="orikatest.beans.BasicPerson" classB="orikatest.beans.BasicPersonDto" byDefault="true"> 
 	
-		<fieldMapping fieldA="name" fieldB="fullName"/>
-		<fieldMapping fieldA="age" fieldB="currentAge"/>
-	
+		<fieldMapping>
+			<fieldA name="name"/>
+			<fieldB name= "fullName"/>
+		</fieldMapping>		
+		
+		<fieldMapping>
+			<fieldA name="age"/>
+			<fieldB name= "currentAge"/>
+		</fieldMapping>
+		
+		<fieldMapping>
+			<fieldA name="name" getFunc="getUNSTANDARD" setFunc="setUNSTANDARD" setParamType="java.lang.String"/>
+			<fieldB name= "standard"/>
+		</fieldMapping>
+		
 </classMapping>	
 
 </mappings>

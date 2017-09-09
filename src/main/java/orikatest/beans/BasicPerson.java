@@ -6,7 +6,9 @@ public class BasicPerson {
 	  private String name;
 	  private int age;
 	  private Date birthDate;
-	  
+	 
+	  private String UNSTANDARD;
+
 	  
 	  // getters/setters omitted
 	public String getName() {
@@ -26,6 +28,12 @@ public class BasicPerson {
 	}
 	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
+	}
+	public String getUNSTANDARD() {
+		return UNSTANDARD;
+	}
+	public void setUNSTANDARD(String uNSTANDARD) {
+		UNSTANDARD = uNSTANDARD;
 	}
 	  
 	  

@@ -28,6 +28,7 @@ public class Application {
 		person.setName("roni geller");
 		person.setAge(43);
 		person.setBirthDate(new Date());
+		person.setUNSTANDARD("successs");
 		try {
 			System.out.println("Start Application");
 			

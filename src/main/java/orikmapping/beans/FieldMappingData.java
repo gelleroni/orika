@@ -6,34 +6,46 @@ import javax.xml.bind.annotation.*;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class FieldMappingData {
 	
-	@XmlAttribute(name="fieldA")
-	private String fieldAname;
-	@XmlAttribute(name="fieldB")
-	private String fieldBname;
+	@XmlElement(name="fieldA")
+	private FieldData fieldA;
+	
+	@XmlElement(name="fieldB")
+	private FieldData fieldB;
+	
 	
 	public FieldMappingData() {
 		
 	}
 	
-	public String getFieldAname() {
-		return fieldAname;
-	}
 	
-	//
-	public void setFieldAname(String fieldAname) {
-		this.fieldAname = fieldAname;
+
+	public FieldData getFieldA() {
+		return fieldA;
 	}
-	public String getFieldBname() {
-		return fieldBname;
+
+
+
+	public void setFieldA(FieldData fieldA) {
+		this.fieldA = fieldA;
 	}
-	//
-	public void setFieldBname(String fieldBname) {
-		this.fieldBname = fieldBname;
+
+
+
+	public FieldData getFieldB() {
+		return fieldB;
 	}
+
+
+
+	public void setFieldB(FieldData fieldB) {
+		this.fieldB = fieldB;
+	}
+
+
 
 	@Override
 	public String toString() {
-		return "FieldMappingData [fieldAname=" + fieldAname + ", fieldBname=" + fieldBname + "]";
+		return "FieldMappingData [fieldAname=" + fieldA + ", fieldBname=" + fieldB + "]";
 	}
 	
 	
