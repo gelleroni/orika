@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+<classMapping classA="orikatest.beans.BasicPerson"  classB="orikatest.beanDto.Worker"><fieldMapping>
+	<fieldA name="name"/>
+	<fieldB name="fullName"/>
+</fieldMapping>
+<fieldMapping>
+	<fieldA name="age"/>
+	<fieldB name="currentAge"/>
+</fieldMapping>
+<fieldMapping>
+	<fieldA name="birthDate"/>
+	<fieldB name="birthDate"/>
+</fieldMapping>
+</classMapping>
+<classMapping classA="orikatest.beans.WorkPlace"  classB="orikatest.beanDto.WorkPlaceDto"><fieldMapping>
+	<fieldA name="workerArr"/>
+	<fieldB name="workers"/>
+</fieldMapping>
+<fieldMapping>
+	<fieldA name="depName"/>
+	<fieldB name="placeName"/>
+</fieldMapping>
+</classMapping>
+</mappings>

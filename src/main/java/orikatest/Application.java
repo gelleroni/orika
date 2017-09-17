@@ -12,6 +12,7 @@ import javax.xml.namespace.QName;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import orikatest.beanDto.BasicPersonDto;
 import orikatest.beans.*;
 import orikmapping.ClassConverterService;
 import orikmapping.beans.*;

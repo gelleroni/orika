@@ -1,0 +1,7 @@
+class,orikatest.beans.BasicPerson,orikatest.beanDto.Worker
+field,name,fullName
+field,age,currentAge
+field,birthDate,birthDate
+class,orikatest.beans.WorkPlace,orikatest.beanDto.WorkPlaceDto
+field,workerArr,workers
+field,depName,placeName
