@@ -1,0 +1,7 @@
+class,letters.beans.BaseProcess,letters.TestData
+field,name,fullName
+field,age,currentAge
+field,birthDate,birthDate
+class,orikatest.beans.WorkPlace
+field,workerArr,workers
+field,depName,placeName

@@ -24,26 +24,8 @@ public class Application {
 	
 	public static void main(String[] args) {
 		
-		ClassConverterService service = null;
-		BasicPerson person = new BasicPerson();
-		person.setName("roni geller");
-		person.setAge(43);
-		person.setBirthDate(new Date());
-		person.setUNSTANDARD("successs");
-		try {
-			System.out.println("Start Application");
-			
-			
-			service = ClassConverterService.instance();
-			
-			BasicPersonDto dto = service.getMapperFacade().map(person, BasicPersonDto.class);
-			System.out.println(dto);
-			System.out.println(service);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-       // SpringApplication.run(Application.class, args);
+		
+       SpringApplication.run(Application.class, args);
     }
 	
 }

@@ -42,7 +42,7 @@ public class ClassConverterService {
 	private ClassConverterService() throws JAXBException {
 		mapperFactory = new DefaultMapperFactory.Builder().build();
 		
-		loadingMappingConfig("C:\\roni\\workspaces\\springboot\\orikatest\\src\\main\\resources\\mapping.xml");
+		loadingMappingConfig("C:\\roni\\workspaces\\springboot\\orikatest\\src\\main\\resources\\mapping1.xml");
 	}
 
 

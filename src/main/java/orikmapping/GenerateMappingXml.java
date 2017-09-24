@@ -21,12 +21,11 @@ public class GenerateMappingXml {
 	private static final Integer FIELD_B_INDX = 2;
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		String fileName= "C:\\roni\\workspaces\\springboot\\orikatest\\src\\input.csv";
         File file= new File(fileName);
         Scanner inputStream;
         List<List<String>> lines = new ArrayList<>();
-
+        System.out.println("Start generate xml config base on " + fileName);
         try{
             inputStream = new Scanner(file);
 
@@ -64,7 +63,7 @@ public class GenerateMappingXml {
 			e.printStackTrace();
 		} 	
        
-
+        System.out.println("Complete generate xml config base on " + fileName);
         
       }
 

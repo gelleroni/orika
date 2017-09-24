@@ -1,0 +1,2782 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:esi="http://www.esi-knowledge.com"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:attribute name="ioMode" type="xs:string" default="None" />
+	<xs:element name="logist_data">
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:choice>
+					<xs:element name="insured">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="Zipcode"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="HouseNumber"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ApartmentNumber"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="EntranceNumber"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="CityID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="StreetName"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="AccountNumber"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="BranchNumber"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="BankCode"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IsInsuredDebt"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IsForeclosure"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IsFamilyHeadForeclosure"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IsOtherActiveClaim"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="changeinsuredadress"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="changeinsuredinfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="AccountHolderName"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="BirthDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="StatusUpdateDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="UpdateDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="AccountHolderIdentityCard"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IdentityCard"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="FamilyHeadIdentityCard"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="Current_Date_Time"
+									esi:ioMode="None" type="xs:date" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="insuredpolicy">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="DES_FormID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="FormID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_FORM_STATUS_R_CONSTITUTION_STATUS_ID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_FORM_STATUS_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="RATE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PolicyIDPolicyInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_EVENT_STATUS_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_EVENT_STATUS_R_CONSTITUTION_STATUS_ID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="STATUS_ID_rate"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_RATE_STATUS_R_CONSTITUTION_STATUS_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_RATE_STATUS_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="IndexTypeID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="STATUS_ID_rate1"
+									esi:ioMode="None" type="xs:double" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="claim">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="ClaimID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="InterestedPartyID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimPaymentAccount"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IsDoubleCover"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ZipcodeClaimAddress"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="HouseNumberClaimAddress"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ApartmentNumberClaimAddress"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="EntranceNumberClaimAddress"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="CityIDClaimAddress"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="StreetNameClaimAddress"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IdentityCardClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="des_PolicyIDClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="PolicyIDClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_DOCUMENT_STATUS_R_CONSTITUTION_STATUS_ID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="AccountNumberClaimBankAccount"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="BranchNumberClaimBankAccoun"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimApprovalStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="desClaimApprovalStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_CLAIM_LINE_DECISION_R_CONSTITUTION_STATUS_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimPaymentStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="desClaimPaymentStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="des_LegalAttentionStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="LegalAttentionStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_DOCUMENT_ATT_STATUS_R_CONSTITUTION_STATUS_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_DOCUMENT_ATT_STATUS_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_CLAIM_LINE_DECISION_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="EventTypeID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimApprovalTypeID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="desClaimApprovalTypeID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_DOCUMENT_STATUS_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ApplicationTypeID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="desApplicationTypeID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimTypeID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimApprovalApprovalReasonID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="desClaimApprovalApprovalReasonID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_VENDOR_PRICE_LIST_STATUS_R_TABLE_NAME_STATE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_VENDOR_PRICE_LIST_STATUS_R_CONSTITUTION_STATUS_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="TaxDeductionSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="EventIDClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="des_EventIDClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="BankCodeClaimBankAccount"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SupervisionComplaint"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IsBankDetailsUpdated"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IsRecommendationUpdated"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="AccountHolderNameClaimBankAccount" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="CreateDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="MedicalServiceDate"
+									esi:ioMode="None" type="xs:date" />
+								<xs:element nillable="true" name="LegalAttention"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ExternalInsurerID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IsDoubleClaim"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="AccountHolderIdentityCardClaimBankAccount" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="Sug_Tviya_Takin"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Mazav_Tviya_Takin"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Sug_Pniya_Takin"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="IsExternalDoubleCover"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_CLAIM_TYPE_R_CONSTITUTION_STATUS_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_CLAIM_TYPE_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_APPLICATION_TYPE_R_CONSTITUTION_STATUS_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_APPLICATION_TYPE_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_CLAIM_STATUS_R_CONSTITUTION_STATUS_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_CLAIM_STATUS_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_LEGAL_ATTENTION_STATUS_R_CONSTITUTION_STATUS_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_LEGAL_ATTENTION_STATUS_R_TABLE_NAME_STATE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_EVENT_TYPE_R_CONSTITUTION_STATUS_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_EVENT_TYPE_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="des_ClaimTypeID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="des_ClaimStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="Zakay" esi:ioMode="None">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="2" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="With_Policy_Continuity"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Aging_Days"
+									esi:ioMode="None" type="xs:long" />
+								<xs:element nillable="true" name="Canceled"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Old_Historic"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Conclusion_2"
+									esi:ioMode="None" type="xs:string" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="claiminsure">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="ClaimIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="des_PolicyIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="PolicyIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimStatusIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="EventTypeIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimTypeIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="EventIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="EventDatePriorClaimInfo"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="des_EventTypeIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="Canceled"
+									esi:ioMode="None" type="xs:string" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_EVENT">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="SelfParticipationPercentage"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="EVENT_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="RATE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="description_event_code"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="EXPENSE_COVERAGE_PERCENTAGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="IS_CONTINUING_EVENT"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="PARTICIPATION_TOP"
+									esi:ioMode="Input/Output" type="xs:string" />
+								<xs:element nillable="true" name="MAXIMAL_SERVICES"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="STATUS_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_EVENT_STATUS_R_CONSTITUTION_STATUS_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_EVENT_STATUS_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="status_id_des"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="WAITING_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="QUALIFICATION_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="AGING_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="WAITING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_WAITING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="AGING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_AGING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SUM_FOR_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="Exceptionality"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="QUALIFICATION_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="SelfParticipationSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="Aging_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Waiting_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="EventIDClaimInfo"
+									esi:ioMode="None">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="Irregular_Waiting"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Qualification_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Qualification_By_Days"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Irregular_Qualification"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Waiting_Period_Service_Group"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true"
+									name="Exceptionality_From_Service_Group" esi:ioMode="None"
+									type="xs:double" />
+								<xs:element nillable="true"
+									name="Qualification_Period_Service_Group" esi:ioMode="None"
+									type="xs:double" />
+								<xs:element nillable="true" name="Aging_Period_Service_Group"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Continuity_From_Service_Group"
+									esi:ioMode="None" type="xs:double" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_RATE_EVENT_I">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="EVENT_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="des_EVENT_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="RATE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_RATE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_COMPENSATION_PRICE_LIST">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="desINDEX_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="INDEX_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="INDEX_DATE"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="BASE_INDEX_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="STATUS_ID_pricelist"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="START_DATE"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="COST_SUM"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="EXPIRATION_DATE"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="EVENT_ID_CODE"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ID_CODE"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IS_SUPPLIERS"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="SERVICE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_VENDOR_PRICE_LIST">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="STATUS_ID_CODE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="VENDOR_COST_SUM"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="VENDOR_EVENT_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="VENDOR_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="VENDOR_VENDOR_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="VENDOR_SERVICE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_PARAMETERS">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="ID_PARAMETR"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="DAYS_FOR_INTEREST"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="APPROVED_SUM_OVER_AVARAGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MAX_LAWSUIT_SETTLEMENT_SUM"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MAXIMAL_SERVICE_SUM"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="CONTINUITY_TIME_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="INDEX_MONTHLY_DATE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="ADDITIONAL_DAYS_FOR_INTEREST"
+									esi:ioMode="Input/Output" type="xs:double" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_SERVICE_LIST">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="SelfParticipationPercentage"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="EXPENSE_COVERAGE_PERCENTAGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PARTICIPATION_TOP"
+									esi:ioMode="Input/Output" type="xs:string" />
+								<xs:element nillable="true" name="MAXIMAL_SERVICES"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="WAITING_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="QUALIFICATION_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="AGING_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="WAITING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_WAITING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="AGING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_AGING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="QUALIFICATION_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_QUAL_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SelfParticipationSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="SUM_FOR_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="Exceptionality"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Aging_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="SERVICE_LIST_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="DES_SERVICE_ID_CODE"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="DES_SERVICE_LIST_ID_CODE"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SERVICE_LIST_ID_code"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="STATUS_ID_code"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_STATUS_ID_code"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="Waiting_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Qualification_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Qualification_By_Days"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Irregular_Qualification"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Irregular_Waiting"
+									esi:ioMode="None" type="xs:string" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_SERVICE">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="SelfParticipationPercentage"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="EXPENSE_COVERAGE_PERCENTAGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PARTICIPATION_TOP"
+									esi:ioMode="Input/Output" type="xs:string" />
+								<xs:element nillable="true" name="MAXIMAL_SERVICES"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="WAITING_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="QUALIFICATION_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="AGING_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="WAITING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_WAITING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="AGING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_AGING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="QUALIFICATION_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="SelfParticipationSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="SUM_FOR_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="Exceptionality"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="STATUS_ID_medical_service"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="ServiceID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="EVENT_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SERVICE_LIST_ID_code"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_Id" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="des_STATUS_ID_medical_service"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_SERVICE_STATUS_R_CONSTITUTION_STATUS_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_SERVICE_STATUS_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="Aging_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Waiting_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="InsureStartDateReWaitingPeriod"
+									esi:ioMode="None" type="xs:date" />
+								<xs:element nillable="true" name="Irregular_Waiting"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Qualification_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Qualification_By_Days"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Irregular_Qualification"
+									esi:ioMode="None" type="xs:string" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_EVENT_SERVICE_I">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="EVENT_ID_service_code"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SERVICE_ID_service"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_EVENT_ID_service"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="service_des_SERVICE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_FORM">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="SelfParticipationPercentage"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="EXPENSE_COVERAGE_PERCENTAGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PARTICIPATION_TOP"
+									esi:ioMode="Input/Output" type="xs:string" />
+								<xs:element nillable="true" name="MAXIMAL_SERVICES"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="WAITING_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="QUALIFICATION_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="AGING_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="WAITING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_WAITING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="AGING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_AGING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="QUALIFICATION_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_QUAL_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SelfParticipationSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="SUM_FOR_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="STATUS_ID_FORM"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SERVICE_SUPPLIER_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="ID_FORM"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="Aging_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Waiting_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Irregular_Waiting"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Qualification_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Qualification_By_Days"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Irregular_Qualification"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Form_To_Policy_Relation"
+									esi:ioMode="None">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="Exceptionality"
+									esi:ioMode="None" type="xs:double" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_TERMS_AND_EXCEPTIONS">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="MAXIMAL_SERVICES_EXC"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="ID_exc" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="SECTION_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="EXCEPTION_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_EXCEPTION_TYPE_Id"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="WAITING_PERIOD_TYPE_ID_exc"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_WAITING_PERIOD_TYPE_ID_exc"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="QUALIFICATION_PERIOD_TYPE_ID_exc" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="des_QUAL_PERIOD_TYPE_ID_exc"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="EVENT_ID_exc"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="des_EVENT_ID_exc"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SERVICE_LIST_ID_exc"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_SERVICE_LIST_ID_exc"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SERVICE_ID_exc"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_SERVICE_ID_exc"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="FORM_ID_exc"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_FORM_ID_exc"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="RATE_ID_exc"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_RATE_ID_exc"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IS_CONTINUITY_exc"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="WAITING_PERIOD_exc"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="QUALIFICATION_PERIOD_exc"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="IS_DOUBLE"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="Waiting_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Waiting_By_Days"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Qualification_By_Days"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Qualification_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="With_Policy_Continuity"
+									esi:ioMode="None" type="xs:string" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_RATE">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="SelfParticipationPercentage"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="EXPENSE_COVERAGE_PERCENTAGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PARTICIPATION_TOP"
+									esi:ioMode="Input/Output" type="xs:string" />
+								<xs:element nillable="true" name="MAXIMAL_SERVICES"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="WAITING_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="QUALIFICATION_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="AGING_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="WAITING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_WAITING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="AGING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_AGING_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="QUALIFICATION_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_QUAL_PERIOD_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SelfParticipationSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="SUM_FOR_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MIN_COL_INSURANCE_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MIN_COL_ENTRANCE_AGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MIN_IND_ENTRANCE_AGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MAX_COL_ENTRANCE_AGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MAX_IND_ENTRANCE_AGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MINIMAL_COLLECTIVE_EXIT_AGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MINIMAL_INDIVIDUAL_EXIT_AGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MAXIMAL_COLLECTIVE_EXIT_AGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MAXIMAL_INDIVIDUAL_EXIT_AGE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="STATUS_ID_rate"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_RATE_STATUS_R_CONSTITUTION_STATUS_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true"
+									name="MD_RATE_STATUS_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="SERVICE_SUPPLIER_TYPE_ID_rate"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="UPGRADE_CODE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="EXPIRATION_DATE_rate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="PERIOD" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="MIN_IND_INSURANCE_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MAX_COL_INSURANCE_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MAX_IND_INSURANCE_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="COL_INSURANCE_PERIOD_AGE_TO"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MIN_IND_PAYMENT_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MAX_IND_PAYMENT_PERIOD"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="COL_PAYMENT_PERIOD_AGE_TO"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="Exceptionality"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="RATE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="ID_FORM"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="Aging_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Waiting_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Irregular_Waiting"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Qualification_Period_In_Days"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="Qualification_By_Days"
+									esi:ioMode="None" type="xs:string" />
+								<xs:element nillable="true" name="Irregular_Qualification"
+									esi:ioMode="None" type="xs:string" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_FORM_RATE_I">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="FORM_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_FORM_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="RATE_ID_rate"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_RATE_ID_rate"
+									esi:ioMode="Input/Output" type="xs:double" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_CLAIM_DOCUMENTS">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="IS_MANDATORY"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IS_INTERNAL"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="DOCUMENT_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_DOCUMENT_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="CLAIM_TYPE_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_CLAIM_TYPE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_SERVICE_DOCUMENTS">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="IS_MANDATORY_serv"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IS_INTERNAL_serv"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="DOCUMENT_TYPE_ID_serv"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_DOCUMENT_TYPE_ID_serv"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SERVICE_ID_check"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="des_SERVICE_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="medical_service_claim">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="ServiceID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="ClaimLineDecisionID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="CurrencyID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="EventID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="Self_Participation_Sum"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_FORM"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_RATE"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_EVENT"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_SERVICE_list"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_SERVICE"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_INS"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_YEAR"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_TEST"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="PERIOD_TYPE_TWO_YRS"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="AGE" esi:ioMode="None"
+									type="xs:double" />
+								<xs:element nillable="true" name="Total_Payment_Sum"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="MAXIMAL_SERVICES_PER_PERIOD"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="PAYMENT_VS_MAX_PAYMENT"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="total_payment_period"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="MAX_SERVICE_LEFT"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="MAXIMAL_SERVICES_avl"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="REST_SUM"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="TOTAL_SUM"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="qty_of_srv_done"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="MAX_SERVICE_LEFT_con"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="MAXIMAL_SERVICES_avl_con"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="REST_SUM_con"
+									esi:ioMode="None" type="xs:double" />
+								<xs:element nillable="true" name="TOTAL_SUM_con"
+									esi:ioMode="None" type="xs:double" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="alarm">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="no" esi:ioMode="None"
+									type="xs:long" />
+								<xs:element nillable="true" name="code" esi:ioMode="Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="Entity" esi:ioMode="Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="35" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="type" esi:ioMode="Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MD_SERVICE_SERVICE_LIST_I">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="SERVICE_LIST_ID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="SERVICE_ID_CODE"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="SERVICE_LIST_ID_code"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="EVENT_ID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="PolicyExceptionPolicyins">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="IdentityCardPolicyException"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="PolicyID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SectionID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ExceptionID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ExceptionStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="desExceptionStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ClaimDocumentinclaim">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="IdentityCardClaimDocument"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="DocumentID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="PolicyIDClaimDocument"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimIDClaimDocument"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="des_DocumentStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="DocumentStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="DocumentAttributionStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="des_DocumentAttributionStatusID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="DocumentTypeID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SourceTypeID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimTypeIDClaimDocument"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ReceiveDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="des_DocumentTypeID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ClaimException">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="ExceptionIDClaimException"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="ExceptionStatusIDClaimException" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ExceptionIDClaimException1"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ClaimPaymentLine">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="IDClaimLine"
+									esi:ioMode="Input/Output" type="xs:long" />
+								<xs:element nillable="true" name="key_attribute"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IndexTypeID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="SelfParticipationPercentage"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="TaxDeductionPercentage"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="ExemptionPercentage"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="InerestPercentage"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MedicalServiceQuantity"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="TodaysDateIndex"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="CoverageValidityDateIndex"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MedicalServiceDateIndex"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MedicalServicePriceIndex"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="MaximalServicePrice"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="HospitalAdmissionStartDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="TotalServiceBeforeIndex"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="TotalServiceAfterIndex"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="IndexSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="SelfParticipationSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="OriginalSelfParticipationSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="SumBeforeInterest"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="IsAmountDueManual"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="TotalPaymentSumClaimPaymentLine" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="OriginalPaymentSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="RequiredSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="RequiredSumAfterIndex"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="NetRequiredSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="InterestSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="PeriodicInterestSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="CalculatedInterestSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="OriginalAmountDue"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="HospitalAdmissionEndDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="ExemptionSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="ExemptionUpdateUser"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="PaymentChangeReasonID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="AnnualInterestPercentage"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="TotalDaysOfDelay"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="StartDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="PreCalculationPaymentSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="EndDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="AllDocumentsReceivedDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="PaymentDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="IsIndexCalculationManual"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ExemptionUpdateDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="ApplicationDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="RelevantArrivalDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="TodaysDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="ExemptionReceiveDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true"
+									name="MedicalServiceDateClaimPaymentLine" esi:ioMode="Input/Output"
+									type="xs:date" />
+								<xs:element nillable="true" name="CoverageValidityDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="FirstPaymentDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="ExemptionValidityDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ClaimDocumentclaims">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="DocumentIDPriorClaimDocument"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="DocumentTypeIDPriorClaimDocument" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="des_DocumentTypeIDPriorClaimDocument" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="claimlaininclaims">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true"
+									name="ReceiptReferenceNumberPriorClaimPayment" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ServiceIDPriorClaimLine"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="IDClaimPaymentLineclaims"
+									esi:ioMode="Input/Output" type="xs:long" />
+								<xs:element nillable="true" name="ApprovedSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ClaimPaymentLineclaims">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true"
+									name="TotalPaymentSumPriorClaimPaymentLine" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="IDClaimPaymentLineclaims"
+									esi:ioMode="Input/Output" type="xs:long" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="RateIDPolicy">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="RateID" esi:ioMode="Input/Output"
+									type="xs:double" />
+								<xs:element nillable="true" name="RateIDpolicy"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Com_Claim">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="TotalObligationSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="ObligationID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="PolicyDetails">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="FormID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="PolicyIDPolicyInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="StatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_POLICY_STATUS_R_CONSTITUTION_STATUS_ID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IsPolicyDebt"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IsContinuity"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="InsuranceEndDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="DES_FormID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="MD_POLICY_STATUS_R_TABLE_NAME_STATE_ID" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="desPolicyIDPolicyInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="desStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="errcode"
+									esi:ioMode="None" type="xs:long" />
+								<xs:element nillable="true" name="errdesc"
+									esi:ioMode="None">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="Policy_Period_in_Days"
+									esi:ioMode="None" type="xs:long" />
+								<xs:element nillable="true" name="InsuranceStartDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="InsureStartDateReWaitingPeriod"
+									esi:ioMode="None" type="xs:date" />
+								<xs:element nillable="true"
+									name="InsureStartDateReQualificationPeriod" esi:ioMode="None"
+									type="xs:date" />
+								<xs:element nillable="true"
+									name="Continuity_Days_Between_Policies" esi:ioMode="None" type="xs:long" />
+								<xs:element nillable="true" name="Age_On_Start_Of_Policy"
+									esi:ioMode="None" type="xs:double" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="TrackingDocClaim">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="ClaimID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="RecDetClaim">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true"
+									name="ReceiptReferenceNumberClaimPayment" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ReceiptReferenceNumber"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="RequiredPaymentSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="RsnStatClaim">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="ClaimID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimStatusReasonID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="desClaimStatusReasonID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Pay">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="TotalPaymentSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="ClaimID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="ClaimPaymentStatusIDClaimPayment" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ActualPerformanceMethodID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="claiminsureDet">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="ClaimIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="PolicyIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimStatusIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="EventTypeIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimTypeIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="EventIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="EventDatePriorClaimInfo"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="des_PolicyIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="des_EventTypeIDPriorClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="PayClaimIns">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true" name="IdentityCardClaimInfo"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true"
+									name="PaymentStatusIDPriorClaimPayment" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ClaimLine">
+						<xs:complexType>
+							<xs:all>
+								<xs:element nillable="true"
+									name="ReceiptReferenceNumberClaimPayment" esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IDClaimLine"
+									esi:ioMode="Input/Output" type="xs:long" />
+								<xs:element nillable="true" name="IsSurgeryRecommended"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="IsAdditionalServiceCompletion"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimLineDecisionID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="DoctorsLicense"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="CurrencyID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimLineStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ClaimID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="10" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="desClaimLineStatusID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ServiceID"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="ExternalInsurerSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+								<xs:element nillable="true" name="EventID"
+									esi:ioMode="Input/Output">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element nillable="true" name="ServiceDate"
+									esi:ioMode="Input/Output" type="xs:date" />
+								<xs:element nillable="true" name="ObligationSum"
+									esi:ioMode="Input/Output" type="xs:double" />
+							</xs:all>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
